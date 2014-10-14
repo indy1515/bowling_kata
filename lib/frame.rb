@@ -17,7 +17,7 @@ class Frame
 	end 
 
 	def hit(number)
-		puts "Hit Number #{@hit_counter} Max: #{@MAX_HIT}"
+		# puts "Hit Number #{@hit_counter} Max: #{@MAX_HIT}"
 		if @hit_counter < @MAX_HIT 
 		  	if(number <= @stand_pin)
 		    	total_fall = setfalling_pin(number)
@@ -33,11 +33,11 @@ class Frame
 		    		if(total_fall == @@MAX_PIN)
 		    			setBonus(1)
 		    			@state = "SPARE"
-		    			puts "Check isTenthFrame: #{@isTenthFrame}"
+		    			# puts "Check isTenthFrame: #{@isTenthFrame}"
 		    			if(@isTenthFrame)
 
 		    				@MAX_HIT = 3
-		    				puts "Set MAX_HIT: #{@MAX_HIT}"
+		    				# puts "Set MAX_HIT: #{@MAX_HIT}"
 		    			end
 		    		elsif(@hit_counter == @MAX_HIT)
 		    			@state = "END"
@@ -54,7 +54,7 @@ class Frame
 			@state = "END"
 		end
 		
-		display()
+		# display()
 		return @state
 	end  
 

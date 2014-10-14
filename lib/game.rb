@@ -66,7 +66,7 @@ class Game
 		i = 1
 		@frames.each do |frame|
 			total_score += frame.getScore()
-			# puts "Frame #{i} score: #{frame.getScore()}" 
+			puts "Frame #{i} score: #{frame.getScore()}" 
 			i += 1
 		end
 		return total_score
