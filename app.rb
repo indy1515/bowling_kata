@@ -1,4 +1,8 @@
 # app.rb
+# Intouch Marsvongpragorn 	5631371921
+# Benjaporn Pianpanitporn 	5631270121
+# Thanatseth Howattanapan 	5631254121
+# Nuntuchaporn Trongsiriwat 5631267321 
 require 'rspec'
 require "./lib/game.rb"
 
