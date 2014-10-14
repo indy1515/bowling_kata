@@ -58,6 +58,15 @@ describe Game do
 			expect(total_score).to eq(150)
 		end
 
+		it "Check hit with all 1 pin down 23 times of roll" do
+			game = Game.new()
+			for i in 1..23
+				game.roll(1)
+			end
+			total_score = game.score()
+			expect(total_score).to eq(20)
+		end
+
 
 		it "Check all strike with exceed by 100 roll" do
 			game = Game.new()
