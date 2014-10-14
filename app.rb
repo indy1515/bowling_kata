@@ -22,12 +22,6 @@ game.roll(3)
 game.roll(7)
 game.roll(8)
 game.roll(1)
-# for i in 1..20
-# 	game.roll(5)
-# end
-# game.roll(10)
-# game.roll(10)
-# game.roll(10)
-# game.roll(10)
+
 total_score = game.score()
 puts "Total Score: #{total_score}"
